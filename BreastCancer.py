@@ -325,7 +325,7 @@ def predictImage(img_path, arrayImg=None, printData=True):
     dict_obj = my_dictionary()
     for j in range(len(classes)):
         if printData:
-            dict_obj.add(str(classes[j]), str(round(compProbs[j] / 12, 4)) + ' %')
+            dict_obj.add(str(classes[j]), str(round(compProbs[j] / 12, 2)))
             # print(str(classes[j]) + " : " + str(round(compProbs[j] / 12, 4)) + "%")
     print(dict_obj)
     return dict_obj
